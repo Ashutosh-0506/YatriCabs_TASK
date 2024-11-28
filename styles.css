@@ -7,7 +7,7 @@
 
 .hero-sub-container {
     min-height: 571px;
-    background: url(/Images/mountain.jpg);
+    background: url(../Images/mountain.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
