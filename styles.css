@@ -2137,7 +2137,7 @@ h2.react-datepicker__current-month {
 
 .div_2_nav {
     position: relative;
-    background-image: url(https://github.com/Ashutosh-0506/YatriCabs_TASK/blob/main/Images/logo.png);
+    background-image: url('https://github.com/Ashutosh-0506/YatriCabs_TASK/blob/main/Images/logo.png');
     background-repeat: no-repeat;
     background-size: contain;
     display: flex;
