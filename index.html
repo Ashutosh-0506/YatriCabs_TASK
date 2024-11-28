@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+
+<title>
+      India's Leading One Way Intercity Car Rental Service | Taxi Service |
+      Yatri Car Rental
+    </title>
+
+<link href="/favicon.ico" rel="icon"/>
+<meta name="next-size-adjust"/>
+<script nomodule="" src="/_next/static/chunks/polyfills-42372ed130431b0a.js"></script>
+<link href="styles.css" rel="stylesheet"/>
+</head>
+<body class="__className_d65c78" style="margin: 0px">
+<div class="nav-container">
+<div class="logo-container">
+<img alt="img" data-nimg="1" decoding="async" height="326" loading="lazy" src="/Images/logo.png" style="color: transparent" width="945"/>
+</div>
+<div class="mid-img"><a href="tel:+917860663399">+91-7860663399</a></div>
+<div class="last-img-group">
+<div class="wrapper-button no-active">
+<div class="icon-wrapper icon-exit-active">
+
+</div>
+</div>
+</div>
+</div>
+<div class="Toastify"></div>
+<div class="book">
+<div class="hero-container">
+<div class="hero-sub-container">
+<div class="fade-dark-filter"></div>
+<div class="hero-title">
+<h1>
+              India's<spn> Leading One Way Intercity</spn> Cab Service
+              Provider
+            </h1>
+</div>
+
+    <div class="form-container" style="z-index: 100; position: relative;">
+      <!-- Main Tabs -->
+      <div class="tabs" role="tablist">
+        <div class="tab active" onclick="showForm('outstation', 'one-way')">Outstation</div>
+        <div class="tab" onclick="showForm('local')">Local</div>
+        <div class="tab" onclick="showForm('airport')">Airport</div>
+      </div>
+
+      <!-- Outstation Form -->
+      <div class="form-content" id="outstation" style="display: block;">
+        <div class="sub-tabs">
+          <button class="sub-option active" onclick="showSubForm('one-way', this)">One Way</button>
+          <button class="sub-option" onclick="showSubForm('round-trip', this)">Round Trip</button>
+        </div>
+        <div id="one-way" class="sub-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="from-one-way">From</label>
+              <input id="from-one-way" placeholder="Enter starting location" type="text" required>
+              <span class="icon">📍</span>
+            </div>
+            <div class="form-group">
+              <label for="to-one-way">To</label>
+              <input id="to-one-way" placeholder="Enter destination" type="text" required>
+              <span class="icon">📍</span>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="pickup-date-one-way">Pickup Date</label>
+              <input id="pickup-date-one-way" type="date" required>
+              <span class="icon">📅</span>
+            </div>
+            <div class="form-group">
+              <label for="pickup-time-one-way">Pickup At</label>
+              <input id="pickup-time-one-way" type="time" required>
+              <span class="icon">⏰</span>
+            </div>
+          </div>
+          <button type="submit" class="submit-btn">EXPLORE CABS</button>
+        </div>
+      </div>
+
+      <!-- Local Form -->
+      <div class="form-content" id="local" style="display: none;">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pickup-city-local">Pickup City</label>
+            <input id="pickup-city-local" placeholder="Enter city" type="text" required>
+            <span class="icon">📍</span>
+          </div>
+          <div class="form-group">
+            <label for="pickup-time-local">Pickup At</label>
+            <input id="pickup-time-local" type="time" required>
+            <span class="icon">⏰</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pickup-date-local">Pickup</label>
+            <input id="pickup-date-local" type="date" required>
+            <span class="icon">📅</span>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">EXPLORE CABS</button>
+      </div>
+
+      <!-- Airport Form -->
+      <div class="form-content" id="airport" style="display: none;">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="from-airport">From</label>
+            <input id="from-airport" placeholder="Enter location" type="text" required>
+            <span class="icon">📍</span>
+          </div>
+          <div class="form-group">
+            <label for="trip-airport">Trip</label>
+            <select id="trip-airport" required>
+              <option value="one-way">One Way</option>
+              <option value="round-trip">Round Trip</option>
+            </select>
+            <span class="icon">✈️</span>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="pickup-date-airport">Pickup</label>
+            <input id="pickup-date-airport" type="date" required>
+            <span class="icon">📅</span>
+          </div>
+          <div class="form-group">
+            <label for="pickup-time-airport">Pickup At</label>
+            <input id="pickup-time-airport" type="time" required>
+            <span class="icon">⏰</span>
+          </div>
+        </div>
+        <button type="submit" class="submit-btn">EXPLORE CABS</button>
+      </div>
+    </div>
+    
+  <!-- Main Tabs -->
+  <!-- <div class="tabs" role="tablist">
+    <div class="tab active" onclick="showForm('outstation', 'one-way')">Outstation</div>
+    <div class="tab" onclick="showForm('local')">Local</div>
+    <div class="tab" onclick="showForm('airport')">Airport</div>
+  </div> -->
+
+  <!-- Outstation Form -->
+  <div class="form-content" id="outstation" style="display: block;">
+    <!-- Sub-tabs for Outstation -->
+    <div class="sub-tabs">
+      <button class="sub-option active" onclick="showSubForm('one-way', this)">One Way</button>
+      <button class="sub-option" onclick="showSubForm('round-trip', this)">Round Trip</button>
+    </div>
+    <!-- One Way Form -->
+    <div id="one-way" class="sub-form">
+      <div class="form-group">
+        <label for="from-one-way">From</label>
+        <input id="from-one-way" placeholder="Enter starting location" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="to-one-way">To</label>
+        <input id="to-one-way" placeholder="Enter destination" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="pickup-date-one-way">Pickup Date</label>
+        <input id="pickup-date-one-way" type="date" required>
+      </div>
+      <div class="form-group">
+        <label for="pickup-time-one-way">Pickup At</label>
+        <input id="pickup-time-one-way" type="time" required>
+      </div>
+    </div>
+    <!-- Round Trip Form -->
+    <div id="round-trip" class="sub-form" style="display: none;">
+      <div class="form-group">
+        <label for="from-round-trip">From</label>
+        <input id="from-round-trip" placeholder="Enter starting location" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="to-round-trip">To</label>
+        <input id="to-round-trip" placeholder="Enter destination" type="text" required>
+      </div>
+      <div class="form-group">
+        <label for="pickup-date-round-trip">Pickup Date</label>
+        <input id="pickup-date-round-trip" type="date" required>
+      </div>
+      <div class="form-group">
+        <label for="return-date-round-trip">Return Date</label>
+        <input id="return-date-round-trip" type="date" required>
+      </div>
+      <div class="form-group">
+        <label for="pickup-time-round-trip">Pickup At</label>
+        <input id="pickup-time-round-trip" type="time" required>
+      </div>
+    </div>
+  </div>
+
+  <!-- Local Form -->
+  <div class="form-content" id="local" style="display: none;">
+    <div class="form-group">
+      <label for="pickup-city-local">Pickup City</label>
+      <input id="pickup-city-local" placeholder="Enter city" type="text" required>
+    </div>
+    <div class="form-group">
+      <label for="pickup-date-local">Pickup</label>
+      <input id="pickup-date-local" type="date" required>
+    </div>
+    <div class="form-group">
+      <label for="pickup-time-local">Pickup At</label>
+      <input id="pickup-time-local" type="time" required>
+    </div>
+  </div>
+
+  <!-- Airport Form -->
+  <div class="form-content" id="airport" style="display: none;">
+    <div class="form-group">
+      <label for="pickup-From-airport">From</label>
+      <input id="pickup-From-airport" placeholder="Enter city" type="text" required>
+    </div>
+    <div class="form-group">
+      <label for="pickup-Trip-airport">Trip</label>
+      <input id="pickup-Trip-airport" placeholder="Enter city" type="text" required>
+    </div>
+    <div class="form-group">
+      <label for="pickup-date-airport">Pickup</label>
+      <input id="pickup-date-airport" type="date" required>
+    </div>
+    <div class="form-group">
+      <label for="pickup-time-airport">Pickup At</label>
+      <input id="pickup-time-airport" type="time" required>
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+  function showForm(formId, subFormId = null) {
+    document.querySelectorAll(".form-content").forEach((form) => (form.style.display = "none"));
+    document.querySelectorAll(".tab").forEach((tab) => tab.classList.remove("active"));
+    document.getElementById(formId).style.display = "block";
+    document.querySelector(`.tab[onclick*="${formId}"]`).classList.add("active");
+    if (formId === "outstation" && subFormId) {
+      showSubForm(subFormId, document.querySelector(`.sub-option[onclick*="${subFormId}"]`));
+    }
+  }
+
+  function showSubForm(subFormId, button) {
+    document.querySelectorAll(".sub-form").forEach((form) => (form.style.display = "none"));
+    document.querySelectorAll(".sub-option").forEach((btn) => btn.classList.remove("active"));
+    document.getElementById(subFormId).style.display = "block";
+    if (button) button.classList.add("active");
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showForm("outstation", "one-way");
+  });
+
+  function showForm(formId, subFormId = null) {
+    // Hide all main forms and remove active class from main tabs
+    document.querySelectorAll(".form-content").forEach((form) => (form.style.display = "none"));
+    document.querySelectorAll(".tab").forEach((tab) => tab.classList.remove("active"));
+
+    // Show selected form and activate its tab
+    document.getElementById(formId).style.display = "block";
+    document.querySelector(`.tab[onclick*="${formId}"]`).classList.add("active");
+
+    // For Outstation, show One Way by default
+    if (formId === "outstation" && subFormId) {
+      showSubForm(subFormId, document.querySelector(`.sub-option[onclick*="${subFormId}"]`));
+    }
+  }
+
+  function showSubForm(subFormId, button) {
+    // Hide all sub-forms and remove active class from sub-options
+    document.querySelectorAll(".sub-form").forEach((form) => (form.style.display = "none"));
+    document.querySelectorAll(".sub-option").forEach((btn) => btn.classList.remove("active"));
+
+    // Show selected sub-form and activate its button
+    document.getElementById(subFormId).style.display = "block";
+    button.classList.add("active");
+  }
+
+  // Set Outstation and One Way as default selection on page load
+  document.addEventListener("DOMContentLoaded", () => {
+    showForm("outstation", "one-way");
+  });
+</script>
+
+</div>
+<div class="overlay-container">
+<div class="sub-overlay">
+<div class="overlay-info o1">
+<p class="p1">Transparent Billing</p>
+<p class="p2">GPS Based Billing | No Km Tampering</p>
+</div>
+<div class="overlay-info o2">
+<p class="p3">Download Now!</p>
+<div class="download-device">
+<a href="#"><img alt="oneway cab near me" data-nimg="1" decoding="async" height="81" loading="lazy" src="Images/Google_play.f4f741e9.svg" style="color: transparent" width="206"/></a>
+<div>
+<a href="#"><img alt="oneway cab near me" data-nimg="1" decoding="async" height="81" loading="lazy" src="Images/app_store.e55a83b4.svg" style="color: transparent" width="206"/></a>
+</div>
+</div>
+</div>
+<div class="overlay-info o3">
+<p class="p1">No return fare</p>
+<p class="p2">Oneway cab fare I No hidden charges</p>
+</div>
+</div>
+<div class="mob-device">
+<p>Download Now!</p>
+<div class="download-device">
+<a href="#"><img alt="oneway cab near me" data-nimg="1" decoding="async" height="81" loading="lazy" src="Images/Google_play.f4f741e9.svg" style="color: transparent" width="206"/></a>
+<div>
+<a href="#"><img alt="oneway cab near me" data-nimg="1" decoding="async" height="81" loading="lazy" src="Images/app_store.e55a83b4.svg" style="color: transparent" width="206"/></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--$-->
+<div class="Advantages_Container">
+<div class="Adv-sub-container1">
+<div class="Adv-icon">
+<img alt="Car Rental" data-nimg="1" decoding="async" height="42" loading="lazy" src="Images/green-hand.svg" style="color: transparent" width="66"/>
+</div>
+<div class="Adv-head"><p>Return Fare, Not Fair!</p></div>
+<div class="Adv-body">
+<p>
+            Why Pay for Return Journey when you are travelling oneway? Now get
+            discounted AC Taxi at just half of the round trip cost for your one
+            way travel.
+          </p>
+</div>
+</div>
+<div class="Adv-sub-container2">
+<div class="Adv-icon">
+<img alt="car rental" data-nimg="1" decoding="async" height="79" loading="lazy" src="Images/green-location.svg" style="color: transparent" width="63"/>
+</div>
+<div class="Adv-head"><p>GPS Based Billing System</p></div>
+<div class="Adv-body">
+<p>
+            Since the GPS data captures the actual distance and time traveled,
+            it reduce the chance of Kilometer tampering or discrepancies in
+            billing.
+          </p>
+</div>
+</div>
+<div class="Adv-sub-container3">
+<div class="Adv-icon">
+<img alt="taxi car rental with driver" data-nimg="1" decoding="async" height="68" loading="lazy" src="Images/green-driving.svg" style="color: transparent" width="74"/>
+</div>
+<div class="Adv-head"><p>Now available routes are!</p></div>
+<div class="Adv-body">
+<p>Lucknow | Gorakhpur | Varanasi | Ayodhya | Allahabad | Kanpur</p>
+</div>
+</div>
+</div>
+<div class="additional-details">
+<div><h2>India's Premier Intercity and Local Taxi Services</h2></div>
+<div>
+<p>
+          At Yatri Car Rental, we pride ourselves on being a top-tier Online
+          Oneway Car Rental &amp; Cab Booking Service, delivering Reliable and
+          Premium Outstation and Local Taxi Services. With over a decade of
+          experience, Instead of Self-Drive Car Rental, we have become the
+          leading driver-driven One Way Car Rental Company in India, renowned
+          for our extensive coverage across the country
+        </p>
+</div>
+</div>
+<!--/$--><!--$-->
+<div class="head-holder">
+<h2 class="heading">Why <spn>yatri </spn>?</h2>
+</div>
+<div class="feature-container">
+<div class="flx1">
+<img alt="taxi car rental with driver" data-nimg="1" decoding="async" height="389" loading="lazy" src="Images/car+rental+agra 1.png" style="color: transparent" width="580"/>
+</div>
+<div class="flx2">
+<div class="features">
+<div class="f-container">
+<div class="f-left">
+<div class="f-icon">
+<img alt="car rental" data-nimg="1" decoding="async" height="64" loading="lazy" src="Images/fas.svg" style="color: transparent" width="44"/>
+</div>
+</div>
+<div class="f-infos">
+<h3 class="sub-head">Fast response time</h3>
+<p class="f-text">
+                Experience the Best Car Rental Service with Driver for Local or
+                Outstation Trips. Enjoy prompt response times and seamless car
+                hire service, ensuring you get on the road quickly.
+              </p>
+</div>
+</div>
+<div class="f-container">
+<div class="f-left">
+<div class="f-icon">
+<img alt="taxi car rental with driver" data-nimg="1" decoding="async" height="71" loading="lazy" src="Images/peoples.svg" style="color: transparent; width: 60px" width="70"/>
+</div>
+</div>
+<div class="f-infos">
+<h3 class="sub-head">Vast fleet</h3>
+<p class="f-text">
+                We offer a wide range of rental cars including Sedans, SUVs,
+                MUVs, premium Sedans, and Tempo Travellers to meet all your
+                needs.
+              </p>
+</div>
+</div>
+<div class="f-container">
+<div class="f-left">
+<div class="f-icon router_svg">
+<img alt="taxi car rental with driver" data-nimg="1" decoding="async" height="75" loading="lazy" src="Images/router.svg" style="color: transparent" width="74"/>
+</div>
+</div>
+<div class="f-infos">
+<h3 class="sub-head">Easy to order</h3>
+<p class="f-text">
+                Easily Book a Cab Online through our user-friendly website,
+                mobile application, or by calling our customer support team.
+              </p>
+</div>
+</div>
+<div class="f-container">
+<div class="f-left">
+<div class="f-icon">
+<img alt="taxi car rental with driver" data-nimg="1" decoding="async" height="71" loading="lazy" src="Images/doller.svg" style="color: transparent" width="70"/>
+</div>
+</div>
+<div class="f-infos">
+<h3 class="sub-head">Great tariffs</h3>
+<p class="f-text">
+                Rent a Car at the Lowest Rates! Our car hire tariffs are highly
+                competitive compared to other operators. Book online cabs at the
+                best prices with Yatri Car Rental.
+              </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!--/$--><!--$-->
+<div class="rideDetailMainContainer">
+<div class="subContainer1">
+<div class="rHead"><h3>Car Type</h3></div>
+<div class="rBody">
+<p>AC Sedans</p>
+<p>AC Hatchbacks</p>
+<p>AC SUV</p>
+</div>
+</div>
+<div class="subContainer2">
+<div class="rHead"><h3>Model Includes</h3></div>
+<div class="rBody">
+<p>Etios, Amaze, Dzire etc.</p>
+<p>Wagon R, Celerio, Micra etc.</p>
+<p>Ertiga, Xylo etc.</p>
+</div>
+</div>
+<div class="subContainer3">
+<div class="rHead"><h3>Passengers</h3></div>
+<div class="rBody">
+<p>4 Pax</p>
+<p>4 Pax</p>
+<p>6-7 Pax</p>
+</div>
+</div>
+<div class="subContainer4">
+<div class="rHead"><h3>Ideal For</h3></div>
+<div class="rBody">
+<p>Comfortable trips with small families</p>
+<p>Budget trips over short distances</p>
+<p>Premium trips with large families</p>
+</div>
+</div>
+<div class="subContainer5">
+<div class="rHead"><h3>Fare</h3></div>
+<div class="rBody">
+<p>Rs.11/KM</p>
+<p>Rs.11/KM</p>
+<p>Rs.13/KM</p>
+</div>
+</div>
+</div>
+<!--/$--><!--$-->
+<div class="ComparisonContainer">
+<div class="CompDetails">
+<div class="CompHead">
+<h2>
+            Why choose AC Bus or AC Train for your <span>One Way Journey</span>?
+          </h2>
+</div>
+<div class="CompPara">
+<p>
+            Our oneway Car Rental service is cheaper than AC bus and 2-tier AC
+            train ticket fares. It reduces your travel time, and you travel in
+            your own private space, allowing you to fully enjoy your journey.
+            Our one way taxi will come to your doorstep and take you to your
+            desired destination. So, book your Cheapest one way cab from Lucknow
+            to Gorakhpur or Varanasi to Ayodhya with our reliable Oneway car
+            rental service with driver. Experience the convenience of our taxi
+            service, where you can rent a car effortlessly and enjoy seamless
+            cab booking. Choose our car hire option for a hassle-free and
+            comfortable travel experience. We offer outstation cab and intercity
+            travel services, ensuring a smooth and enjoyable Luxury ride
+            wherever you need to go.
+          </p>
+</div>
+</div>
+<div class="RightContainer">
+<div class="TaxiGif">
+<img alt="one way cab near me" class="Comparison_taxiGif" data-nimg="1" decoding="async" height="600" loading="lazy" src="Images/book-taxi.gif" style="color: transparent; width: 100%; height: auto" width="800"/>
+</div>
+</div>
+</div>
+<!--/$--><!--$-->
+<div class="DetailContainerWrapper">
+<div class="subHeader">
+<h3>Car Rental in India - Book Reliable Vehicles for All Your Needs</h3>
+</div>
+<div class="subBody f1">
+<div class="paraFlexer">
+<p>
+            Choosing a chauffeur-driven car rental over a self-drive Car Hire
+            option in India offers several benefits with Yatri Car Rental:
+          </p>
+</div>
+<div class="paraFlexer">
+<p><b>1.</b></p>
+<p>
+<strong>Skilled Chauffeurs:</strong> Our experienced and courteous
+            drivers ensure a safe, comfortable, and stress-free ride. Whether
+            you need a taxi service, outstation car rental, or oneway cab, they
+            are adept at navigating India’s roads for a seamless travel
+            experience.
+          </p>
+</div>
+<div class="paraFlexer">
+<p><b>2.</b></p>
+<p>
+<strong>Dedicated Oneway Cab Service:</strong> We offer specialized
+            oneway car rental services across India, allowing you to pay only
+            for the distance you travel. This makes intercity trips with Yatri
+            Car Rental both cost-effective and convenient.
+          </p>
+</div>
+<div class="paraFlexer">
+<p><b>3.</b></p>
+<p>
+<strong>Well-Maintained Car Rental Fleet:</strong> Our fleet of
+            rental cars in India is kept in top condition, ensuring you enjoy a
+            comfortable and secure ride, whether you opt for a car hire, taxi
+            service, or outstation car rental.
+          </p>
+</div>
+<div class="paraFlexer">
+<p><b>4.</b></p>
+<p>
+<strong>Transparent Pricing for Car Hire:</strong> Our GPS-based
+            billing system ensures fair pricing by eliminating any chances of
+            Kilometer tampering by the driver. With real-time distance
+            measurement and live location tracking, you get transparency and
+            peace of mind when using our car rental services.
+          </p>
+</div>
+<div class="paraFlexer">
+<p><b>5.</b></p>
+<p>
+<strong>24/7 Customer Support for Car Rentals:</strong> Our customer
+            care team is available round the clock to assist with any inquiries
+            or concerns regarding your car hire, taxi service, or outstation car
+            rental, ensuring a smooth and enjoyable experience throughout your
+            journey in India.
+          </p>
+</div>
+</div>
+</div>
+<!--/$--><!--$-->
+<div class="Why_Choose_-container">
+<div class="Wc-header"><h2>Why Choose One way Cab?</h2></div>
+<div class="Wc-flex-container">
+<ul class="Wc-box">
+<li>Instant Booking &amp; Confirmation</li>
+<li>Confirmed Booking Immediately</li>
+<li>No Return Fare for One-Way Trip</li>
+<li>Clean &amp; Professional Cab Services</li>
+<li>Transparent Billing with GPS based billing system</li>
+</ul>
+<div class="Wc-img-box">
+<img alt="car hire" data-nimg="1" decoding="async" height="600" loading="lazy" src="Images/moving-car.gif" style="color: transparent" width="800"/>
+</div>
+<ul class="Wc-box">
+<li>Pick-up from your house</li>
+<li>Dedicated Cab just for you</li>
+<li>Drop to your desired destination</li>
+<li>Completed more than 20,000+ Oneway Trips</li>
+<li>Multiple Payment Option including Credit Card</li>
+</ul>
+</div>
+<div class="Wc-last-container">
+<h2>
+          Discover affordable travel with our seamless
+          <spn>intercity car rentals </spn>in India – where excellence meets
+          affordability with standardized rates in every city. Unleash your
+          journey!
+        </h2>
+</div>
+</div>
+<!--/$--><!--$-->
+<div class="DetailContainerWrapper">
+<div class="subHeader">
+<h3>
+          Exploring India's amazing landscapes, from the mountains to the
+          beaches, one memorable road trip at a time
+        </h3>
+</div>
+<div class="subBody">
+<div class="paraFlexer">
+<p>•</p>
+<p>
+            Experience the thrill of road travel with our reliable car rental
+            and taxi service as we explore the diverse landscapes of India
+            together. We're passionate about making car hire accessible and
+            enjoyable for everyone.
+          </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+            Instead of worrying about the road, relax in our chauffeur-driven
+            cabs on your next vacation. With a presence in over 2000 cities
+            across India, we're here to take you wherever your heart
+            desires with our Luxury car rental services.
+          </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+            We cherish the freedom to stop, breathe in the fresh air, immerse in
+            local cultures, and Savor regional cuisines along the way. These
+            moments of discovery enrich your travels and create lasting memories
+            through our rent a car service.
+          </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+            No destination is too far or too close; we encourage you to explore
+            the beauty around you with our car hire options. Pack your bags, set
+            out on weekend adventures, and uncover the gems in your vicinity
+            with our taxi service.
+          </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+            Planning your trip is a breeze with our user-friendly website, or
+            you can chat with our travel experts at <b>7860663399</b> for
+            personalized guidance on car rental. Our cab booking app simplifies
+            the process, ensuring a hassle-free experience when you rent a car.
+          </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+            Our experienced drivers are your companions on the road, guiding you
+            through India's best experiences with our car rental and taxi
+            service. From booking to your safe return home, we're dedicated
+            to ensuring you have an exceptional road trip.
+          </p>
+</div>
+</div>
+<div class="MiddleDetails_main">
+<div class="sub-details-division">
+<div class="md-image-holder">
+<img alt="car rental" data-nimg="1" decoding="async" height="201" loading="lazy" src="Images/b-car-money.3776e514.svg" style="color: transparent" width="163"/>
+</div>
+<div class="content-holder">
+<h3>For Any Budget</h3>
+<h2>
+              Choose from hatchbacks, sedans, mini SUVs, prime SUVs, and mini
+              buses like Tempo Travellers 12-seater to 25-seater to find a ride
+              within your budget and at your convenience with our Car Rental and
+              Cab Service options.
+            </h2>
+</div>
+</div>
+<div class="sub-details-division">
+<div class="md-image-holder">
+<img alt="oneway cab service" data-nimg="1" decoding="async" height="201" loading="lazy" src="Images/b-car-location.9535138f.svg" style="color: transparent" width="163"/>
+</div>
+<div class="content-holder">
+<h3>For Any Distance</h3>
+<h2>
+              Book daily rides with multiple stops within the city or travel to
+              your favourite destinations across the country with our Oneway or
+              Round Trip Outstation Cab service. Enjoy seamless Cab Booking for
+              all your travel needs.
+            </h2>
+</div>
+</div>
+<div class="sub-details-division">
+<div class="md-image-holder">
+<img alt="taxi service near me" data-nimg="1" decoding="async" height="201" loading="lazy" src="Images/b-car-calander.7edf7bd2.svg" style="color: transparent" width="162"/>
+</div>
+<div class="content-holder">
+<h3>For Any Duration</h3>
+<h2>
+              Plan a day out with our hourly-based packages for local city tours
+              or book our Car Rental services with a driver for long or
+              multiple-day trips. Our Taxi Service ensures reliable
+              transportation tailored to your Car Hire needs.
+            </h2>
+</div>
+</div>
+</div>
+<div class="DetailContainerWrapper">
+<div class="subHeader"><h3>Why Choose Yatri Car Rental?</h3></div>
+<div class="subBody">
+<div class="paraFlexer">
+<p>•</p>
+<p>
+              Yatri Car Rental has been a trusted digital platform for booking
+              local and outstation car rental and taxi services since 2014. Our
+              primary goal is to offer our clients an exceptional car rental and
+              cab booking experience, and we take great pride in our commitment
+              to safety, reliability, and experienced drivers. These qualities
+              are evident across all our car rental services, making us the
+              preferred choice for those seeking rental cars and taxi services
+              in INDIA.
+            </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+<b>Service You Can Trust</b> - At Yatri Car Rental, we are
+              dedicated to providing dependable services in INDIA. We guarantee
+              that we won't cancel any bookings without advance
+              notification, and our rental cars are meticulously maintained to
+              ensure a seamless and stress-free journey for our clients.
+            </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+<b>Safety is Our Priority</b> - Safety and comfort are paramount
+              at Yatri Car Rental in INDIA. We exclusively hire experienced and
+              skilled drivers who possess in-depth knowledge of the city's
+              roads and traffic regulations. Our drivers are committed to
+              delivering excellent customer service and ensuring a comfortable
+              and stress-free travel experience for passengers.
+            </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+<b>Expert Chauffeurs at Your Service</b> - Yatri Car Rental takes
+              pride in selecting only the most skilled, knowledgeable, and
+              courteous drivers to enhance the convenience and satisfaction of
+              our clients.
+            </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+<b>Extensive Industry Experience</b> - With over 10 years of
+              industry expertise, Yatri Car Rental is your go-to choice for
+              premium car hire services.
+            </p>
+</div>
+<div class="paraFlexer">
+<p>•</p>
+<p>
+<b>Proven Track Record</b> - We place a strong emphasis on
+              transparency in our billing system and consistently strive to
+              provide a seamless and satisfactory experience for our customers.
+              Our commitment to customer comfort and satisfaction is evident in
+              our outstanding Google ratings, where we consistently receive
+              ratings of 4.8 stars or higher.
+            </p>
+</div>
+</div>
+</div>
+</div>
+<!--/$--><!--$-->
+<div class="AppDownload_container">
+<div class="App-left-wrapper">
+<div class="App-img-holder">
+<img alt="car hire" data-nimg="1" decoding="async" height="364" loading="lazy" src="Images/mobile_phone.ad0a76fd.svg" style="color: transparent" width="281"/>
+</div>
+<div class="App-txt">
+<h2>GET YOUR <spn>YATRI CABS</spn> APP NOW!</h2>
+<p>
+            Use code <spn>WELCOME YATRI</spn> and get <spn>FLAT 05%</spn> OFF*
+            on your first intercity RIDE
+          </p>
+<h4>Download Now!</h4>
+<div class="download-image-holder">
+<a href="#"><img alt="rent a car for outstation" data-nimg="1" decoding="async" height="81" loading="lazy" src="Images/Google_play.f4f741e9.svg" style="color: transparent" width="206"/></a><a href=""><img alt="one way cab near me" data-nimg="1" decoding="async" height="81" loading="lazy" src="Images/app_store.e55a83b4.svg" style="color: transparent" width="206"/></a>
+</div>
+</div>
+</div>
+<div class="App-right-wrapper">
+<h3>Become a <spn>Driver</spn> Partner</h3>
+<p>
+          Join <spn>Yatri Car Rental</spn> and attach your car to our platform.
+          Earn more by serving our passengers and benefit from our extensive
+          customer base.
+        </p>
+<div>
+<a class="filled-btn-green" href="#">DOWNLOAD THE APP</a>
+</div>
+</div>
+</div>
+<!--/$--><!--$-->
+<div class="Al-main-div">
+<h2>
+<a href="#">Car Rental in Lucknow</a>
+</h2>
+<h2>
+<a href="#">Car Rental in Gorakhpur</a>
+</h2>
+<h2>
+<a href="#">Taxi Service in Ayodhya</a>
+</h2>
+<h2>
+<a href="#">Taxi Service in Allahabad (Prayagraj)</a>
+</h2>
+<h2>
+<a href="#">Taxi Service in Lucknow</a>
+</h2>
+<h2>
+<a href="#">Taxi Service in Gorakhpur</a>
+</h2>
+<h2>
+<a href="#">Car Rental in Ayodhya</a>
+</h2>
+<h2>
+<a href="#">Car Rental in Allahabad (Prayagraj)</a>
+</h2>
+<h2>
+<a href="#">Car Rental in Varanasi</a>
+</h2>
+<h2>
+<a href="#">Car Rental in Kanpur</a>
+</h2>
+<h2>
+<a href="#">Taxi Service in Varanasi</a>
+</h2>
+<h2>
+<a href="#">Taxi Service in Kanpur</a>
+</h2>
+</div>
+<!--/$--><!--$-->
+<div id="oc-main-container">
+<p>Operational Cities :</p>
+<a href="#">Lucknow</a><a href="#">Ayodhya</a><a href="#">Gorakhpur</a><a href="#">Varanasi</a><a href="#">Allahabad(Prayagraj)</a><a href="#">Kanpur</a>
+</div>
+<!--/$-->
+<div class="footer-container">
+<div class="sub-wrapper">
+<div class="logo">
+<img alt="logo..." data-nimg="1" decoding="async" height="326" loading="lazy" src="Images/logo.png" style="color: transparent" width="945"/>
+</div>
+<div class="link-wrapper">
+<a href="/">Home</a><a href="#">About</a><a href="#">Services</a><a href="#">Career</a><a href="#">Contact</a><a href="#">Privacy Policy</a><a class="non-mob" href="#">Terms &amp; Condition </a><a class="mob" href="#">T&amp;C </a>
+</div>
+<div class="copyright">
+<p>All Copyrights are reserved by YATRI CAR RENTAL</p>
+</div>
+</div>
+</div>
+
+
+<script>
+  function showForm(formId, subFormId = null) {
+    document.querySelectorAll(".form-content").forEach((form) => (form.style.display = "none"));
+    document.querySelectorAll(".tab").forEach((tab) => tab.classList.remove("active"));
+    document.getElementById(formId).style.display = "block";
+    document.querySelector(`.tab[onclick*="${formId}"]`).classList.add("active");
+    if (formId === "outstation" && subFormId) {
+      showSubForm(subFormId, document.querySelector(`.sub-option[onclick*="${subFormId}"]`));
+    }
+  }
+
+  function showSubForm(subFormId, button) {
+    document.querySelectorAll(".sub-form").forEach((form) => (form.style.display = "none"));
+    document.querySelectorAll(".sub-option").forEach((btn) => btn.classList.remove("active"));
+    document.getElementById(subFormId).style.display = "block";
+    if (button) button.classList.add("active");
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showForm("outstation", "one-way");
+  });
+</script>
+
+
+
+<script>
+  function showForm(formId, subFormId = null) {
+    document.querySelectorAll(".form-content").forEach((form) => (form.style.display = "none"));
+    document.querySelectorAll(".tab").forEach((tab) => tab.classList.remove("active"));
+    document.getElementById(formId).style.display = "block";
+    document.querySelector(`.tab[onclick*="${formId}"]`).classList.add("active");
+    if (formId === "outstation" && subFormId) {
+      showSubForm(subFormId, document.querySelector(`.sub-option[onclick*="${subFormId}"]`));
+    }
+  }
+
+  function showSubForm(subFormId, button) {
+    document.querySelectorAll(".sub-form").forEach((form) => (form.style.display = "none"));
+    document.querySelectorAll(".sub-option").forEach((btn) => btn.classList.remove("active"));
+    document.getElementById(subFormId).style.display = "block";
+    if (button) button.classList.add("active");
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    showForm("outstation", "one-way");
+  });
+</script></body>
+</html>
